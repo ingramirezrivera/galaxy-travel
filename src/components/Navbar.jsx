@@ -9,9 +9,16 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(!click);
 
+  const [ color, setColor ] = useState(false);
+  const changeColor = () => {
+      (window.scrollY >= 100 ? setColor(true) : setColor(false));
+  }
+
+  window.addEventListener('scroll', changeColor);
+
   return (
-    <div className="header">
-      <div className="header-container">
+    <div className={color ? 'header' : 'header'}>
+      <div className={color ? "header-container header-bg" : "header-container "}>
         <Link to="/">
           <h1>GLX TRVL</h1>
         </Link>
