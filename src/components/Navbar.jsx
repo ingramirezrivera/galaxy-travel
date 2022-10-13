@@ -17,7 +17,7 @@ const Navbar = () => {
   window.addEventListener('scroll', changeColor);
 
   return (
-    <div className={color ? 'header' : 'header'}>
+    <div className='header'>
       <div className={color ? "header-container header-bg" : "header-container "}>
         <Link to="/">
           <h1>GLX TRVL</h1>
@@ -30,13 +30,13 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="pricing">Pricing</Link>
+            <Link to="/pricing">Pricing</Link>
           </li>
           <li className="nav-item">
-            <Link to="training">Training</Link>
+            <Link to="/training">Training</Link>
           </li>
           <li className="nav-item">
-            <Link to="contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className="hamburguer" onClick={handleClick}>
