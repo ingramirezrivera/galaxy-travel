@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={'/galaxy-travel'}>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
